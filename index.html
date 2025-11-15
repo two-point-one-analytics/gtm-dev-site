@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>GTM Test Page</title>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -12,6 +12,77 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5GRW36H');</script>
     <!-- End Google Tag Manager -->
+    <script>
+      window.dataLayer.push({
+        event: 'purchase',
+        custom_attribute: 'Top level test',
+        ecommerce: {
+          currency: 'USD',
+          value: 30.03,
+          coupon: 'SUMMER_FUN',
+          shipping_tier: 'Ground',
+          payment_type: 'Credit Card',
+          customer_type: 'new',
+          custom_order_attribute: 'Order test',
+          items: [{
+            item_id: 'SKU_12345',
+            item_name: 'Stan and Friends Tee',
+            custom_item_attribute: 'Item test',
+            affiliation: 'Google Merchandise Store',
+            coupon: 'SUMMER_FUN',
+            discount: 2.22,
+            index: 0,
+            item_brand: 'Google',
+            item_category: 'Apparel',
+            item_category2: 'Adult',
+            item_category3: 'Shirts',
+            item_category4: 'Crew',
+            item_category5: 'Short sleeve',
+            item_list_id: 'related_products',
+            item_list_name: 'Related Products',
+            item_variant: 'green',
+            location_id: 'ChIJIQBpAG2ahYAR_6128GcTUEo',
+            price: 10.01,
+            quantity: 3
+          },
+          {
+            item_id: 'SKU_12346',
+            item_name: 'Google Grey Women's Tee',
+            affiliation: 'Google Merchandise Store',
+            coupon: 'SUMMER_FUN',
+            discount: 3.33,
+            index: 1,
+            item_brand: 'Google',
+            item_category: 'Apparel',
+            item_category2: 'Adult',
+            item_category3: 'Shirts',
+            item_category4: 'Crew',
+            item_category5: 'Short sleeve',
+            item_list_id: 'related_products',
+            item_list_name: 'Related Products',
+            item_variant: 'gray',
+            location_id: 'ChIJIQBpAG2ahYAR_6128GcTUEo',
+            price: 21.01,
+            promotion_id: 'P_12345',
+            promotion_name: 'Summer Sale',
+            quantity: 2
+          }]
+        },
+        user_data = {
+          email: 'test@mail.com',
+          phone: '+15555555555',
+          address: {
+            first_name: 'John',
+            last_name: 'Doe',
+            street: '123 Main St.',
+            city: 'Anytown',
+            region: 'MO',
+            postal_code: '65203',
+            country: 'US'
+          }
+        }
+      });
+    </script>
   </head>
   <body>
     <h1>GTM Test Page</h1>
